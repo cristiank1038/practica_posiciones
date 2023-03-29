@@ -1,0 +1,25 @@
+.elemento-padre {
+    border: 1px dashed black;
+    height: 300px;
+    position: relative;
+}
+
+.elemento-principal {
+    background: yellow;
+    padding: 10px;
+    /*position: static; /* NO podemos mover el elemento, no podemos utilizar top, bottom, left, ni right */
+    /*position: relative; /*Funciona como posición estática, PERO se ve afectado por top, bottom, left y right. Con respecto a la posición original*/
+    /*position: absolute; /*Posición basada en elemento padre*/
+    /*position:fixed; /* Los elementos NO se ven afectados por el scroll */
+    position: sticky;
+    top: 10px;
+}
+
+.elemento-hijo {
+    background: gray;
+    padding: 10px;
+}
+
+.tabla {
+    border: 1px solid black;
+}
